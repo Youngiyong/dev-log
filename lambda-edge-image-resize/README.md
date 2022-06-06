@@ -20,7 +20,7 @@
 
 ### :book: Image-Resizing 전체 구성도
 
-|![image-resize-architecture](https://github.com/Youngiyong/dev-log/tree/main/lambda-edge-image-resize/image/Image-resize.png)|
+![image-resize-architecture](image/Image-resize.png)
 | :----------------------------------: |
 | AWS CloudFront, Lambda@Edge, S3를 사용한 Image-Resizing |
 
@@ -46,7 +46,7 @@
 
 ### :book: S3 Bucket 생성하기
 
-|![s3-bucket-policy](image/bucket.png)|
+![s3-bucket-policy](image/bucket.png)
 
 ### :book: Policy && Role 생성
 
@@ -72,26 +72,26 @@
     ]
 }
 ```
-|![policy](https://github.com/Youngiyong/dev-log/tree/main/lambda-edge-image-resize/image/policy.png)|
+![policy](image/policy.png)
 
-|![role](https://github.com/Youngiyong/dev-log/tree/main/lambda-edge-image-resize/image/role.png)|
+![role](image/role.png)
 
 ### :book: AWS CloudFront 배포 만들기
 
 * Cloudfront origin identity를 생성합니다.
 
-|![cloudfront-origin-identity](https://github.com/Youngiyong/dev-log/tree/main/lambda-edge-image-resize/image/origin-access-Identity.png)|
+![cloudfront-origin-identity](image/origin-access-Identity.png)|
 
 
 * Cloudfront 생성
 
-|![cloudfront-origin](https://github.com/Youngiyong/dev-log/tree/main/lambda-edge-image-resize/image/origin.png)|
+![cloudfront-origin](image/origin.png)
 
-|![cloudfront-behavior](https://github.com/Youngiyong/dev-log/tree/main/lambda-edge-image-resize/image/behavior.png)|
+![cloudfront-behavior](image/behavior.png)
 
-|![cloudfront-behavior2](https://github.com/Youngiyong/dev-log/tree/main/lambda-edge-image-resize/image/behavior2.png)|
+![cloudfront-behavior2](image/behavior2.png)
 
-|![cloudfront-association](https://github.com/Youngiyong/dev-log/tree/main/lambda-edge-image-resize/image/association.png)|
+![cloudfront-association](image/association.png)
 
 
 
