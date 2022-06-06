@@ -46,7 +46,7 @@
 
 ### :book: S3 Bucket 생성하기
 
-|![s3-bucket-policy](https://github.com/Youngiyong/dev-log/tree/main/lambda-edge-image-resize/image/bucket.png)|
+|![s3-bucket-policy](/image/bucket.png)|
 
 ### :book: Policy && Role 생성
 
