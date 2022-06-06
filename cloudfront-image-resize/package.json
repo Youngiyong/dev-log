@@ -1,0 +1,38 @@
+{
+  "name": "cloudfront-image-resize",
+  "version": "0.0.1",
+  "description": "cloudfront-image-resize",
+  "main": "handler.js",
+  "scripts": {
+    "build-ts": "tsc",
+    "build": "npm run build-ts",
+    "test": "jest | npx sls package --stage dev",
+    "deploy": "npx sls deploy --stage dev",
+    "deploy:prod": "npx sls deploy --stage prod",
+    "remove": "sls remove --stage dev",
+    "remove:prod": "sls remove --stage prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "keywords": [
+    "CloudFront",
+    "Lambda@Edge",
+    "Serverless",
+    "TypeScript"
+  ],
+  "author": "Youngiyong <youn9354@naver.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/node": "^14.0.27",
+    "@types/sharp": "^0.25.1",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.732.0",
+    "querystring": "^0.2.0",
+    "sharp": "^0.30.6"
+  }
+}
