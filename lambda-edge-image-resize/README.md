@@ -72,9 +72,9 @@
     ]
 }
 ```
-![policy](image/policy.png)
+![policy](image/policy2.png)
 
-![role](image/role.png)
+![role](image/role2.png)
 
 ### :book: AWS CloudFront 배포 만들기
 
