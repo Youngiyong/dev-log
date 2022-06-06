@@ -46,7 +46,7 @@
 
 ### :book: S3 Bucket 생성하기
 
-|![s3-bucket-policy](/image/bucket.png)|
+|![s3-bucket-policy](image/bucket.png)|
 
 ### :book: Policy && Role 생성
 
