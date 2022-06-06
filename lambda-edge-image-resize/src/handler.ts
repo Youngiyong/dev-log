@@ -16,8 +16,6 @@ const bucket: string = 'test.bucket.kr';
 const supportImageTypes: string[] = ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg', 'tiff'];
 
 export const handler = async (event: Event, context: Context, callback: CallbackFunc): Promise<void> => {
-    console.log("event: ", JSON.stringify(event))
-    console.log("records: "+event.Records)
     const { request, response } = event.Records[0].cf;
      // check if image is present and not cached.
     if (response.status === StatusCode.OK) {
@@ -74,7 +72,6 @@ export const handler = async (event: Event, context: Context, callback: Callback
             // 이미지의 크기를 한 번 조절했을 때 1MB를 넘는 경우를 대처해야 한다.
             // 응답을 조작하지 않는다면 1MB 이상의 응답이 가능하다.
             let metaData: any, resizedImage: any, bytelength: number = 0;
-            console.log("93 metaData: "+metaData)
             while (true) {
                 resizedImage = await sharp(s3Object.body).rotate();
                 metaData = await resizedImage.metadata();
